@@ -27,7 +27,7 @@ class MainScreen extends StatelessWidget {
               items: [
                 BottomNavigationBarItem(
                   activeIcon: Icon(
-                    Icons.home,
+                    Icons.menu_book,
                     color: Get.isDarkMode ? pinkClr : mainColor,
                   ),
                   icon: Icon(
@@ -38,7 +38,7 @@ class MainScreen extends StatelessWidget {
                 ),
                 BottomNavigationBarItem(
                   activeIcon: Icon(
-                    Icons.category,
+                      Icons.add,
                     color: Get.isDarkMode ? pinkClr : mainColor,
                   ),
                   icon: Icon(
