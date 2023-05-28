@@ -19,16 +19,7 @@ class MainScreen extends StatelessWidget {
         () {
           return Scaffold(
             backgroundColor: context.theme.backgroundColor,
-            appBar: AppBar(
-              elevation: 0,
-              leading: Container(),
-              backgroundColor:  Colors.grey[350],
-              title:  Text(controller.title[controller.currentIndex.value],
-              style: TextStyle(
-                color: Colors.black
-              ),),
-              centerTitle: true,
-            ),
+
             bottomNavigationBar: BottomNavigationBar(
               backgroundColor: Get.isDarkMode ? darkGreyClr : Colors.white,
               currentIndex: controller.currentIndex.value,
@@ -40,10 +31,10 @@ class MainScreen extends StatelessWidget {
                     color: Get.isDarkMode ? pinkClr : mainColor,
                   ),
                   icon: Icon(
-                    Icons.home,
+                    Icons.menu_book,
                     color: Get.isDarkMode ? Colors.white : Colors.black,
                   ),
-                  label: 'Add product',
+                  label: 'Menu',
                 ),
                 BottomNavigationBarItem(
                   activeIcon: Icon(
@@ -51,33 +42,33 @@ class MainScreen extends StatelessWidget {
                     color: Get.isDarkMode ? pinkClr : mainColor,
                   ),
                   icon: Icon(
-                    Icons.category,
+                    Icons.add,
                     color: Get.isDarkMode ? Colors.white : Colors.black,
                   ),
-                  label: 'Orders',
+                  label: 'Add',
                 ),
-                BottomNavigationBarItem(
-                  activeIcon: Icon(
-                    Icons.favorite,
-                    color: Get.isDarkMode ? pinkClr : mainColor,
-                  ),
-                  icon: Icon(
-                    Icons.favorite,
-                    color: Get.isDarkMode ? Colors.white : Colors.black,
-                  ),
-                  label: 'Update',
-                ),
-                BottomNavigationBarItem(
-                  activeIcon: Icon(
-                    Icons.settings,
-                    color: Get.isDarkMode ? pinkClr : mainColor,
-                  ),
-                  icon: Icon(
-                    Icons.settings,
-                    color: Get.isDarkMode ? Colors.white : Colors.black,
-                  ),
-                  label: 'Details',
-                ),
+                // BottomNavigationBarItem(
+                //   activeIcon: Icon(
+                //     Icons.favorite,
+                //     color: Get.isDarkMode ? pinkClr : mainColor,
+                //   ),
+                //   icon: Icon(
+                //     Icons.favorite,
+                //     color: Get.isDarkMode ? Colors.white : Colors.black,
+                //   ),
+                //   label: 'Update',
+                // ),
+                // BottomNavigationBarItem(
+                //   activeIcon: Icon(
+                //     Icons.settings,
+                //     color: Get.isDarkMode ? pinkClr : mainColor,
+                //   ),
+                //   icon: Icon(
+                //     Icons.settings,
+                //     color: Get.isDarkMode ? Colors.white : Colors.black,
+                //   ),
+                //   label: 'Details',
+                // ),
               ],
               onTap: (index) {
                 print("indexxxvcxvxvcxvxx ${index}");

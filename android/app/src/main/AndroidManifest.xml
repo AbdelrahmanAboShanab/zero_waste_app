@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.zero_waste">
+    package="com.example.zero_waste_main">
    <application
-        android:label="zero_waste"
+        android:label="zero_waste_main"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
