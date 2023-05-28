@@ -11,7 +11,7 @@ class MainScreen extends StatelessWidget {
 
 
   final controller = Get.put<MainController>(MainController());
-
+//,n,nn,
   @override
   Widget build(BuildContext context) {
     return SafeArea(
